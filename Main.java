@@ -1,19 +1,11 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-// The main method must be in a class named "Main".
-class Main {
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Ingresa un número:");
-        Scanner input = new Scanner(System.in);
-        byte num = input.nextByte();
-        if(num >= 0) {
-            System.out.println("El número es positivo.");
-        } else {
-            System.out.println("El número es negativo.");
+        List<Integer> cuadra = new ArrayList<>();
+        for (int x = 1; x <= 10; x++) {
+            cuadra.add(x * x);
         }
-
-        
+        System.out.println("Cuadrados del 1 al 10: " + cuadra);
     }
 }
